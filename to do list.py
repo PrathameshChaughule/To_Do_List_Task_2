@@ -23,7 +23,7 @@ def deleteTask():
 #Nav Bar
 Nav_bar = PhotoImage(file="../To_Do_List_Task_1-main/Photos/Nav bar.png")
 label = Label(root, image=Nav_bar,bg="#FAEBD7").pack()
-dock=PhotoImage(file="../to do list/Photos/dock.png")
+dock=PhotoImage(file="../To_Do_List_Task_1-main/Photos/dock.png")
 Label(root,image=dock,bg="#4f0fea").place(x=340,y=36)
 heading=Label(root,text="ALL TASK",font="arial 20 bold",fg="white",bg="#4f0fea").place(x=130,y=30)
 
