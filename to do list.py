@@ -21,20 +21,20 @@ def deleteTask():
     lb.delete(ANCHOR)    
 
 #Nav Bar
-Nav_bar = PhotoImage(file="../to do list/Photos/Nav bar.png")
+Nav_bar = PhotoImage(file="../To_Do_List_Task_1-main/Photos/Nav bar.png")
 label = Label(root, image=Nav_bar,bg="#FAEBD7").pack()
 dock=PhotoImage(file="../to do list/Photos/dock.png")
 Label(root,image=dock,bg="#4f0fea").place(x=340,y=36)
 heading=Label(root,text="ALL TASK",font="arial 20 bold",fg="white",bg="#4f0fea").place(x=130,y=30)
 
 #main
-frame = PhotoImage(file="../to do list/Photos/frame.png")
+frame = PhotoImage(file="../To_Do_List_Task_1-main/Photos/frame.png")
 label = Label(root, image=frame,bg="#4f0fea").place(x=20,y=119)
 my_entry = Entry(root,font=('times', 24),width=18,bd=0)
 my_entry.place(x=36,y=131)
 
 #listbox
-listbox = PhotoImage(file="../to do list/Photos/listbox.png")
+listbox = PhotoImage(file="../To_Do_List_Task_1-main/Photos/listbox.png")
 label = Label(root, image=listbox,bg="#FAEBD7").place(x=15,y=230)
 frame1 = Frame(root)
 frame1.pack(pady=32)
@@ -46,11 +46,11 @@ lb.config(yscrollcommand=sb.set)
 sb.config(command=lb.yview)
 
 #delete
-delete=PhotoImage(file="../to do list/Photos/delete.png")
+delete=PhotoImage(file="../To_Do_List_Task_1-main/Photos/delete.png")
 Button(root,image=delete,bd=0,command=deleteTask,bg="#FAEBD7").place(x=40,y=560)
 
 #add
-add=PhotoImage(file="../to do list/Photos/add.png")
+add=PhotoImage(file="../To_Do_List_Task_1-main/Photos/add.png")
 Button(root,image=add,bd=0,command=newTask,bg="#FAEBD7").place(x=300,y=560)
 
 root.mainloop()
